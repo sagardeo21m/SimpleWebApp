@@ -9,4 +9,4 @@ pipeline {
 		sh (script: "mvn -f pom.xml clean install -DREPO_ENV=int")
 	  }
   }
-}
+
