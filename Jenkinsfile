@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("[GitHub] Source Code Checkout") {
 				println "Source Code Checkout"
-				git url:https://github.com/sagardeo21m/SimpleWebApp.git
+				git url: 'https://github.com/sagardeo21m/SimpleWebApp.git'
 			}
 			stage ("[Maven] Code Build") {
 				println "Maven Build"
