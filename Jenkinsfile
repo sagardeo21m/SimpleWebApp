@@ -1,6 +1,5 @@
 pipeline {
   agent any
-  stages {
     stage('Checkout') 
 	  {
 		git url: 'https://github.com/sagardeo21m/SimpleWebApp.git'
