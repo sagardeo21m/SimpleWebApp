@@ -1,7 +1,6 @@
 node('master')
 {
-  timestamps {
-		wrap([$class: 'BuildUser']) {
+	wrap([$class: 'BuildUser']) {
 			
 			cleanWs()
 			def workspace = pwd()
@@ -14,6 +13,5 @@ node('master')
 				//println "Maven Build"
 				sh (script: 'mvn -f pom.xml clean install -DREPO_ENV=int')
 			}
-    }
-  }
+	}
 }
