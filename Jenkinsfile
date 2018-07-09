@@ -1,15 +1,8 @@
-pipeline {
-  agent {
-    node {
-      label 'master'
-    }
-
-  }
-  stages {
-    stage('Build') {
-      steps {
-        sh 'mvn clean install'
-      }
-    }
+node('master')
+{
+  stage('build')
+  {
+    git url:'https://github.com/sagardeo21m/SimpleWebApp.git'
+    sh 'mvn clean install'
   }
 }
