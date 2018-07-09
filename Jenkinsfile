@@ -1,8 +1,8 @@
 pipeline {
   agent any
   stages {
-    stage("[GitHub] Source Code Checkout") {
-				println "Source Code Checkout"
+    stage(Checkout) {
+				
 				git url: 'https://github.com/sagardeo21m/SimpleWebApp.git'
 			}
 			stage ("[Maven] Code Build") {
