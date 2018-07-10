@@ -37,7 +37,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Handles requests for the application home page.
  */
-/* This is a comment number 3 */
+/* This is a comment number 4 */
 @Controller
 public class HomeController {
 
